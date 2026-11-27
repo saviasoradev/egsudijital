@@ -1,6 +1,6 @@
 # EGSU
 
-> EGSU, Antalya Alanya merkezli bir web tasarım ajansıdır. Kurumsal web sitesi, e-ticaret sitesi, SEO ve Google Ads hizmetleri sunar. Web sitesi paketleri domain, hosting ve SSL dahil 10.000 TL'den başlar.
+> EGSU, Alanya ve İstanbul'da müşterileriyle yüz yüze görüşerek çalışan bir web tasarım ajansıdır. Kurumsal web sitesi, e-ticaret sitesi, SEO ve Google Ads hizmetleri sunar. Domain, hosting ve SSL her pakette dahildir.
 
 ## Web tasarım paketleri
 
@@ -29,5 +29,5 @@
 - Telefon: 0507 246 17 06, 0551 873 41 77
 - WhatsApp: 0507 246 17 06
 - E-posta: info@egsudijital.com
-- Adres: Alanya, Antalya, Türkiye
+- Konum: Alanya ve İstanbul'da yüz yüze görüşme
 - Çalışma saatleri: Hafta içi 09:00–18:00
