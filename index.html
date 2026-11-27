@@ -337,7 +337,7 @@ section{padding:130px 0;position:relative}
 #paketler{background:radial-gradient(ellipse 60% 50% at 50% 0%,rgba(30,63,158,.35),transparent 70%),var(--abyss)}
 .pk-head{text-align:center;display:grid;justify-items:center;margin-bottom:70px}
 .pk-head .sec-p{margin-left:auto;margin-right:auto}
-.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;align-items:stretch}
+.plans{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px;align-items:stretch}
 .plan{position:relative;border-radius:26px;padding:1px;background:linear-gradient(160deg,rgba(233,236,243,.16),rgba(233,236,243,.04) 40%,rgba(233,236,243,.08));}
 .plan-in{position:relative;height:100%;border-radius:25px;background:linear-gradient(170deg,#111C40,#0A132E 70%);padding:42px 34px 36px;display:flex;flex-direction:column;overflow:hidden}
 .plan.vip{background:conic-gradient(from var(--a),rgba(214,182,118,.15),var(--gold2),var(--gold),rgba(214,182,118,.15) 40%,rgba(214,182,118,.15) 60%,var(--gold) 85%,rgba(214,182,118,.15));animation:spin 6s linear infinite;box-shadow:0 40px 100px -40px rgba(214,182,118,.45)}
@@ -347,7 +347,7 @@ section{padding:130px 0;position:relative}
 .badge.soft{background:rgba(214,182,118,.12);color:var(--gold2);border:1px solid var(--line2)}
 .plan h3{font-size:26px;font-weight:700}
 .plan .for{color:var(--mute);margin:10px 0 28px;font-size:15.5px;min-height:50px}
-.amount{display:flex;align-items:baseline;gap:8px;font-variant-numeric:tabular-nums;font:800 clamp(44px,4vw,60px)/1 Syne,"Arial Black",sans-serif;letter-spacing:-.02em;color:#fff}
+.amount{display:flex;align-items:baseline;gap:8px;font-variant-numeric:tabular-nums;font:800 clamp(34px,3.2vw,52px)/1 Syne,"Arial Black",sans-serif;letter-spacing:-.02em;color:#fff}
 .amount .num{display:inline-block;min-width:5.6ch;text-align:left}
 .amount span+span{font:700 22px Manrope,system-ui,sans-serif;color:var(--gold)}
 .vat{font-size:14px;color:var(--mute);margin:10px 0 26px}
@@ -478,9 +478,10 @@ footer{background:var(--abyss);color:var(--mute);padding:90px 0 40px;font-size:1
 .js.ready:not(.rm) [data-split].in .w>span{transform:none}
 
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+@media(max-width:1100px){.plans{grid-template-columns:minmax(0,1fr);max-width:560px;margin:0 auto}}
 @media(max-width:1000px){
   .hero .wrap,.ct,.duo{grid-template-columns:1fr;gap:64px}
-  .plans{grid-template-columns:1fr;max-width:560px;margin:0 auto}
+  .plans{grid-template-columns:minmax(0,1fr);max-width:560px;margin:0 auto}
   .stats .wrap{grid-template-columns:1fr 1fr}
   .stat:nth-child(3){border-left:0;padding-left:0}
   .stat{border-top:1px solid var(--line)}
