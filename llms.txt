@@ -43,6 +43,7 @@
 ## Referanslar
 - Şen Parke (Parke ve mutfak dolabı, 2026): https://senparke.com.tr. 1978'den beri Avcılar'da hizmet veren parke firması için kurumsal site. Yüzlerce laminat parke ve MDF ürünü marka, koleksiyon, renk tonu ve kalınlığa göre filtrelenebiliyor, ücretsiz keşif randevusu siteden isteniyor.
 - Prime Barbers (Berber, 2026): https://primebarbers.com.tr. Cerrahpaşa'daki erkek kuaförü için tanıtım sitesi. Hizmetler, tek fiyatlı paket, galeri ve doğrudan WhatsApp'a düşen online randevu formu.
+- rree (Müzik / sanatçı, 2026): https://rree.site. Drill ve trap sanatçısı rree için resmi sanatçı sayfası. Spotify'daki şarkılara doğrudan bağlantılar, şarkı önizlemeleri, biyografi, tek tıkla kopyalanan booking e-postası ve sosyal medya linkleri.
 
 ## İletişim
 - Web: https://egsudijital.com/
