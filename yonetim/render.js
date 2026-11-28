@@ -83,7 +83,7 @@
   function gtmNs(data) { var t = data.seo.googleTagId || ''; return /^GTM-[A-Z0-9]+$/.test(t) ? '<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=' + t + '" height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>\n' : ''; }
   function navLinks(data, home) {
     var p = home ? '' : '/';
-    var refs = data.references.items.length ? '<a href="/referanslar/"' + (home ? '' : ' aria-current="page"') + '>' + esc(data.references.navLabel) + '</a>' : '';
+    var refs = '<a href="/referanslar/"' + (home ? '' : ' aria-current="page"') + '>' + esc(data.references.navLabel) + '</a>';
     return '<a href="' + p + '#hizmetler">Hizmetler</a><a href="' + p + '#paketler">Paketler</a><a href="' + p + '#fiyatlar">Fiyat listesi</a>' +
       (home ? '<a href="#surec">Süreç</a>' : '') + refs + '<a href="' + p + '#sss">Sorular</a>';
   }
@@ -95,7 +95,7 @@
   }
   function footer(data, home) {
     var p = home ? '' : '/';
-    var refs = data.references.items.length ? '<a href="/referanslar/">' + esc(data.references.navLabel) + '</a>' : '';
+    var refs = '<a href="/referanslar/">' + esc(data.references.navLabel) + '</a>';
     return '<footer>\n  <div class="wrap">\n' +
       '    <picture><source srcset="/logo.webp" type="image/webp"><img class="f-mark" data-fx-mark src="/logo.png" width="441" height="64" alt="" loading="lazy" decoding="async"></picture>\n' +
       '    <div class="ft">\n      <a href="' + (home ? '#top' : '/') + '" class="logo" aria-label="EGSU ana sayfa"><picture><source srcset="/logo.webp" type="image/webp"><img src="/logo.png" width="207" height="30" alt="EGSU" loading="lazy"></picture></a>\n' +
@@ -300,7 +300,7 @@
 
   function renderSitemap(data, today) {
     var u = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <url>\n    <loc>' + SITE + '/</loc>\n    <lastmod>' + today + '</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>1.0</priority>\n  </url>\n';
-    if (data.references.items.length) u += '  <url>\n    <loc>' + SITE + '/referanslar/</loc>\n    <lastmod>' + today + '</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>\n';
+    u += '  <url>\n    <loc>' + SITE + '/referanslar/</loc>\n    <lastmod>' + today + '</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>\n';
     return u + '</urlset>\n';
   }
 
@@ -318,7 +318,7 @@
       data.references.items.forEach(function (r) { L.push('- ' + r.name + (r.sector ? ' (' + r.sector + (r.year ? ', ' + r.year : '') + ')' : '') + (r.url ? ': ' + r.url : '') + (r.desc ? '. ' + r.desc : '')); });
     }
     L.push('', '## İletişim', '- Web: ' + SITE + '/');
-    if (data.references.items.length) L.push('- Referanslar: ' + SITE + '/referanslar/');
+    L.push('- Referanslar: ' + SITE + '/referanslar/');
     L.push('- Telefon: ' + c.phones.join(', '), '- WhatsApp: ' + c.whatsapp, '- E-posta: ' + c.email, '- Konum: ' + c.location, '- Çalışma saatleri: ' + c.hours, '');
     return L.join('\n');
   }
