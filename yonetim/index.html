@@ -265,8 +265,8 @@ var SECTIONS=[
  {id:'references',title:'Referanslar',icon:'<path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1 6.2L12 17.3 6.5 20.2l1-6.2L3 9.6l6.2-.9z"/>',desc:'egsudijital.com/referanslar sayfası. Sitenin üst menüsünde “Referanslar” linkiyle açılır.',path:'references',fields:[
    {k:'items',t:'group',l:'Referans projeler',title:'name',sub:'sector',open:true,add:'Referans ekle',tpl:{name:'Yeni referans',sector:'',year:String(new Date().getFullYear()),url:'',image:'',imageWidth:0,imageHeight:0,desc:'',tags:[]},fields:[
      {row:[{k:'name',t:'text',l:'Firma / proje adı'},{k:'sector',t:'text',l:'Sektör',h:'Örnek: Restoran. Aynı sektörler filtre olarak gruplanır.'}]},
-     {row:[{k:'url',t:'text',l:'Site adresi',h:'https:// ile başlayın. Boş bırakılabilir.'},{k:'year',t:'text',l:'Yıl'}]},
-     {k:'image',t:'image',l:'Ekran görüntüsü',h:'Sitenin tam sayfa ekran görüntüsü en iyi sonucu verir: kartın üzerine gelince sayfa aşağı kayar.'},
+     {row:[{k:'url',t:'text',l:'Site adresi',auto:true,h:'Adresi yapıştırdığınızda ekran görüntüsü otomatik alınır.'},{k:'year',t:'text',l:'Yıl'}]},
+     {k:'image',t:'image',l:'Ekran görüntüsü',h:'Site adresinden otomatik alınır, isterseniz kendi görselinizi de yükleyebilirsiniz. Tam sayfa görüntülerde kartın üzerine gelince sayfa aşağı kayar.'},
      {k:'desc',t:'textarea',l:'Kısa açıklama'},
      {k:'tags',t:'list',l:'Yapılan işler',add:'Etiket ekle',h:'Örnek: Kurumsal site, SEO, Online randevu'}]},
    {k:'title',t:'text',l:'Sayfa başlığı'},{k:'intro',t:'textarea',l:'Sayfa açıklaması'},
@@ -362,6 +362,7 @@ function field(f,obj){
     inp.value=val==null?'':val;
     if(f.max){var c=el('span',{class:'count'});var upd=function(){var n=inp.value.length;c.textContent=n+' / '+f.max;c.classList.toggle('over',n>f.max)};upd();l.appendChild(c);inp.addEventListener('input',upd)}
     inp.addEventListener('input',function(){set(inp.value);if(f.onTitle)f.onTitle()});
+    if(f.auto)inp.addEventListener('change',function(){var v=normUrl(inp.value);if(v!==inp.value){inp.value=v;set(v)}if(v&&!obj.image&&obj.__shot)obj.__shot()});
     box.appendChild(l);box.appendChild(inp);box.appendChild(hint()||d.createTextNode(''));
   }else if(f.t==='number'){
     var n=el('input',{id:id,type:'number',min:'0',step:'1',inputmode:'numeric'});n.value=val==null?0:val;
@@ -437,6 +438,25 @@ function field(f,obj){
     var info=el('span',{class:'hint'});
     var paint=function(){var p=obj[f.k];if(p){th.style.backgroundImage='url("'+(pending[p]?pending[p].url:'/'+p)+'")';th.textContent=''}else{th.style.backgroundImage='';th.textContent='Görsel yok'}};
     paint();
+    var busy=false,shotBtn=el('button',{type:'button',class:'btn btn-ghost btn-sm',text:'Site adresinden çek'});
+    var shot=function(){
+      if(busy)return;var u=normUrl(obj.url||'');
+      if(!/^https?:\/\/[^\s.]+\.[^\s]+$/.test(u)){info.textContent='Önce yukarıya sitenin adresini yazın.';return}
+      busy=true;shotBtn.disabled=true;info.textContent='Ekran görüntüsü alınıyor, 10–30 saniye sürebilir…';th.textContent='Alınıyor…';
+      var api='https://api.microlink.io/?url='+encodeURIComponent(u)+'&screenshot=true&meta=false&fullPage=true&viewport.width=1440&viewport.height=900&viewport.deviceScaleFactor=1&waitForTimeout=2500&type=jpeg';
+      fetch(api).then(function(r){return r.json()}).then(function(j){
+        if(j.status!=='success'||!j.data||!j.data.screenshot)throw new Error(j.code==='ERATE'||/rate/i.test(j.message||'')?'Günlük ücretsiz çekim hakkı doldu, yarın tekrar deneyin ya da görseli kendiniz yükleyin.':(j.message||'site açılamadı'));
+        return fetch(j.data.screenshot.url).then(function(r){return r.blob()});
+      }).then(toWebp).then(function(r){
+        var old=obj[f.k];if(old&&pending[old])delete pending[old];
+        var p='img/ref/'+R.slug(obj.name||'referans')+'-'+Date.now().toString(36)+'.webp';
+        pending[p]=r;obj[f.k]=p;obj.imageWidth=r.w;obj.imageHeight=r.h;
+        info.textContent='Ekran görüntüsü alındı ('+r.w+'×'+r.h+', '+Math.round(r.size/1024)+' KB). Yayınla dediğinizde yüklenecek.';
+        paint();changed();
+      }).catch(function(e){info.textContent='Ekran görüntüsü alınamadı: '+e.message;paint()}).then(function(){busy=false;shotBtn.disabled=false});
+    };
+    shotBtn.onclick=shot;
+    Object.defineProperty(obj,'__shot',{value:shot,enumerable:false,configurable:true,writable:true});
     var rm=el('button',{type:'button',class:'btn btn-danger btn-sm',text:'Görseli kaldır',onclick:function(){var p=obj[f.k];if(p&&pending[p])delete pending[p];obj[f.k]='';obj.imageWidth=0;obj.imageHeight=0;paint();changed()}});
     file.addEventListener('change',function(){
       var fl=file.files[0];if(!fl)return;info.textContent='Görsel hazırlanıyor…';
@@ -448,11 +468,12 @@ function field(f,obj){
         paint();changed();file.value='';
       }).catch(function(e){info.textContent='Görsel okunamadı: '+e.message});
     });
-    box.appendChild(el('div',{class:'imgf'},[th,el('div',{class:'acts'},[el('label',{class:'btn btn-ghost btn-sm',for:id,text:'Görsel seç'}),rm,file])]));
+    box.appendChild(el('div',{class:'imgf'},[th,el('div',{class:'acts'},[shotBtn,el('label',{class:'btn btn-ghost btn-sm',for:id,text:'Kendi görselimi yükle'}),rm,file])]));
     box.appendChild(info);var h4=hint();if(h4)box.appendChild(h4);
   }
   return box;
 }
+function normUrl(v){v=String(v||'').trim();if(v&&!/^https?:\/\//i.test(v))v='https://'+v;return v}
 function withTitle(f,cb){if(f.row)return {row:f.row.map(function(x){return x.k?withTitle(x,cb):x})};var c={};for(var k in f)c[k]=f[k];c.onTitle=cb;return c}
 
 function toWebp(file){
@@ -460,7 +481,7 @@ function toWebp(file){
     var img=new Image(),u=URL.createObjectURL(file);
     img.onload=function(){
       var w=img.naturalWidth,h=img.naturalHeight,s=Math.min(1,1400/w);
-      var W=Math.round(w*s),H=Math.min(Math.round(h*s),7000);
+      var W=Math.round(w*s),H=Math.min(Math.round(h*s),6000);
       var c=d.createElement('canvas');c.width=W;c.height=H;
       var x=c.getContext('2d');x.fillStyle='#fff';x.fillRect(0,0,W,H);x.drawImage(img,0,0,w,Math.round(H/s),0,0,W,H);
       URL.revokeObjectURL(u);
