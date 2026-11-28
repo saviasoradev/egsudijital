@@ -48,7 +48,9 @@
   function delay(i, step, base) { return ' style="--d:' + ((base || 0) + i * step).toFixed(2).replace(/0+$/, '').replace(/^0/, '') + 's"'; }
 
   function head(o) {
-    return '<!DOCTYPE html>\n<html lang="tr">\n<head>\n<meta charset="UTF-8">\n' +
+    var tag = /^(GTM|G|AW)-[A-Z0-9]+$/.test(o.tagId || '') ? o.tagId : '';
+    var tagJs = tag ? '<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag(\'js\',new Date());' + (tag.indexOf('GTM-') === 0 ? '' : 'gtag(\'config\',\'' + tag + '\');') + '(function(){function l(){var s=document.createElement(\'script\');s.async=true;s.src=\'https://www.googletagmanager.com/' + (tag.indexOf('GTM-') === 0 ? 'gtm.js' : 'gtag/js') + '?id=' + tag + '\';document.head.appendChild(s)}if(document.readyState===\'complete\')setTimeout(l,1);else addEventListener(\'load\',function(){setTimeout(l,1)})})()</script>\n' : '';
+    return '<!DOCTYPE html>\n<html lang="tr">\n<head>\n' + tagJs + '<meta charset="UTF-8">\n' +
       '<script>(function(h){h.classList.add(\'js\');if(window.matchMedia&&matchMedia(\'(prefers-reduced-motion: reduce)\').matches)h.classList.add(\'rm\');try{if(' + (o.pre ? 'innerWidth<=768||sessionStorage.getItem(\'egsu-pre\')' : 'true') + ')h.classList.add(\'nopre\');sessionStorage.setItem(\'egsu-pre\',\'1\')}catch(e){h.classList.add(\'nopre\')}})(document.documentElement)</script>\n' +
       '<meta name="viewport" content="width=device-width, initial-scale=1">\n' +
       '<title>' + esc(o.title) + '</title>\n' +
@@ -62,10 +64,10 @@
       '<meta property="og:url" content="' + o.url + '">\n' +
       '<meta property="og:title" content="' + esc(o.shareTitle) + '">\n' +
       '<meta property="og:description" content="' + esc(o.shareDescription) + '">\n' +
-      '<meta property="og:image" content="' + SITE + '/og-image.jpg?v=5">\n<meta property="og:image:secure_url" content="' + SITE + '/og-image.jpg?v=5">\n' +
+      '<meta property="og:image" content="' + SITE + '/og-image.jpg?v=6">\n<meta property="og:image:secure_url" content="' + SITE + '/og-image.jpg?v=6">\n' +
       '<meta property="og:image:type" content="image/jpeg">\n<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n' +
       '<meta property="og:image:alt" content="EGSU ana sayfası: kurumsal web sitesi tasarımı">\n' +
-      '<meta name="twitter:card" content="summary_large_image">\n<meta name="twitter:image" content="' + SITE + '/og-image.jpg?v=5">\n' +
+      '<meta name="twitter:card" content="summary_large_image">\n<meta name="twitter:image" content="' + SITE + '/og-image.jpg?v=6">\n' +
       '<meta name="twitter:title" content="' + esc(o.shareTitle) + '">\n<meta name="twitter:description" content="' + esc(o.shareDescription) + '">\n' +
       '<link rel="icon" href="/favicon.ico" sizes="any">\n<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">\n' +
       '<link rel="icon" type="image/png" sizes="512x512" href="/favicon-512.png">\n<link rel="apple-touch-icon" href="/apple-touch-icon.png">\n' +
@@ -78,6 +80,7 @@
       '<style>\n' + o.css + '\n</style>\n</head>\n';
   }
 
+  function gtmNs(data) { var t = data.seo.googleTagId || ''; return /^GTM-[A-Z0-9]+$/.test(t) ? '<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=' + t + '" height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>\n' : ''; }
   function navLinks(data, home) {
     var p = home ? '' : '/';
     var refs = data.references.items.length ? '<a href="/referanslar/"' + (home ? '' : ' aria-current="page"') + '>' + esc(data.references.navLabel) + '</a>' : '';
@@ -138,9 +141,9 @@
       ]
     };
     var o = [];
-    o.push(head({ pre: true, title: data.seo.title, description: data.seo.description, shareTitle: data.seo.shareTitle, shareDescription: data.seo.shareDescription, url: SITE + '/', ld: ld, css: css,
+    o.push(head({ tagId: data.seo.googleTagId, pre: true, title: data.seo.title, description: data.seo.description, shareTitle: data.seo.shareTitle, shareDescription: data.seo.shareDescription, url: SITE + '/', ld: ld, css: css,
       preload: '<link rel="preload" as="image" href="/logo.webp" type="image/webp" fetchpriority="high">\n' }));
-    o.push('<body>\n<a class="skip" href="#icerik">İçeriğe geç</a>\n');
+    o.push('<body>\n' + gtmNs(data) + '<a class="skip" href="#icerik">İçeriğe geç</a>\n');
     o.push('<div id="pre" aria-hidden="true"><div class="cols"><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="pl-in"><div class="lg"><img src="/logo.webp" width="441" height="64" alt="" fetchpriority="high"></div><div class="meta"><span class="bar"><i></i></span><span class="pct" id="pct">00</span></div></div></div>\n');
     o.push('<div id="prog" aria-hidden="true"></div>\n<div class="grain" aria-hidden="true"></div>\n\n');
     o.push(header(data, true));
@@ -256,9 +259,9 @@
     };
     var first = items[0] && items[0].image;
     var o = [];
-    o.push(head({ pre: false, title: R.seoTitle, description: R.seoDescription, shareTitle: R.seoTitle, shareDescription: R.seoDescription, url: url, ld: ld, css: css,
+    o.push(head({ tagId: data.seo.googleTagId, pre: false, title: R.seoTitle, description: R.seoDescription, shareTitle: R.seoTitle, shareDescription: R.seoDescription, url: url, ld: ld, css: css,
       preload: first ? '<link rel="preload" as="image" href="' + esc(imgSrc(first)) + '" fetchpriority="high">\n' : '' }));
-    o.push('<body class="sub">\n<a class="skip" href="#icerik">İçeriğe geç</a>\n<div id="prog" aria-hidden="true"></div>\n<div class="grain" aria-hidden="true"></div>\n\n');
+    o.push('<body class="sub">\n' + gtmNs(data) + '<a class="skip" href="#icerik">İçeriğe geç</a>\n<div id="prog" aria-hidden="true"></div>\n<div class="grain" aria-hidden="true"></div>\n\n');
     o.push(header(data, false));
     o.push('\n<main id="icerik">\n<section class="rf-hero" aria-labelledby="h1">\n  <div class="aurora-p" aria-hidden="true"><div class="aurora"><i></i><i></i><i></i></div></div><span class="hline b" aria-hidden="true"></span>\n  <div class="wrap">\n');
     o.push('    <nav class="crumb" aria-label="Sayfa konumu" data-r><a href="/">Ana sayfa</a><span aria-hidden="true">/</span><span aria-current="page">' + esc(R.navLabel) + '</span></nav>\n');
