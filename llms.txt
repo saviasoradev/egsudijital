@@ -2,29 +2,45 @@
 
 > EGSU, Alanya ve İstanbul'da müşterileriyle yüz yüze görüşerek çalışan bir web tasarım ajansıdır. Kurumsal web sitesi, e-ticaret sitesi, SEO ve Google Ads hizmetleri sunar. Domain, hosting ve SSL her pakette dahildir.
 
-## Web tasarım paketleri
+## Paketler
+- Standart: 10.000 ₺. Hızlıca yayına çıkmak isteyen küçük işletmeler için. İşletmeye özel site tasarımı, Ücretsiz domain (alan adı), Ücretsiz ultra hızlı hosting, SSL güvenlik sertifikası, Mobil uyumlu tasarım, SEO uyumlu altyapı, Gelişmiş yönetim paneli, Online randevu / rezervasyon, 1 kurumsal e-posta adresi, Google Haritalar konumu, Hızlı WhatsApp butonu, Haber / blog sistemi, İletişim formu, Firmaya özel logo tasarımı, 10 sayfaya kadar.
+- Gelişmiş: 15.000 ₺. Büyüyen markalar ve kurumsal firmalar için tam donanım. Standart paketteki her şey, ek olarak: 5 kurumsal e-posta adresi, 20 sayfaya kadar, Açılış hızı optimizasyonu, Google Haritalar işletme kaydı, Google Analytics kurulumu, Google Search Console kaydı, 2 dil seçeneği.
+- E-ticaret: 30.000 ₺. Ürünlerini internetten satmaya başlamak isteyenler için. Standart paketteki her şey, ek olarak: 10 kurumsal e-posta adresi, 30 sayfaya kadar, Açılış hızı optimizasyonu, Haritalar, Analytics ve Search Console, Canlı destek entegrasyonu, Ürün ve kategori modülü, Ürün seçenek / varyant sistemi, Sepet modülü, Kredi kartıyla ödeme, Havale / EFT ile ödeme, Kapıda ödeme, İndirim kuponu modülü, Üyelik sistemi.
 
-- Standart paket: 10.000 TL. İşletmeye özel tasarım, ücretsiz domain, hosting ve SSL, mobil ve SEO uyumlu altyapı, yönetim paneli, online randevu, 1 kurumsal e-posta, Google Haritalar konumu, WhatsApp butonu, blog, iletişim formu, logo tasarımı, 10 sayfaya kadar.
-- Gelişmiş paket: 15.000 TL. Standart paketteki her şey, ek olarak 5 kurumsal e-posta, 20 sayfaya kadar, hız optimizasyonu, Google Haritalar kaydı, Google Analytics ve Search Console kurulumu, 2 dil seçeneği.
-- E-ticaret paketi: 30.000 TL. Standart paketteki her şey, ek olarak 10 kurumsal e-posta, 30 sayfaya kadar, ürün ve kategori modülü, varyant sistemi, sepet, kredi kartı, havale/EFT ve kapıda ödeme, indirim kuponu, üyelik sistemi, canlı destek.
+## Site türüne göre fiyatlar
+- Başlangıç seviye web sitesi: 10.000 ₺, 3 iş günü
+- Tek sayfa (OnePage) site: 10.000 ₺, 3 iş günü
+- Portfolyo ve kişisel marka sitesi: 10.000 ₺, 3 iş günü
+- Kurumsal web sitesi: 10.000 – 20.000 ₺, 7 iş günü
+- WordPress altyapılı site: 12.000 – 24.000 ₺, 7 iş günü
+- Blog sitesi: 20.000 ₺, 7 iş günü
+- Profesyonel kurumsal site: 15.000 – 40.000 ₺, 10–15 iş günü
+- Başlangıç seviye e-ticaret sitesi: 30.000 ₺, 10 iş günü
+- Orta seviye e-ticaret sitesi: 45.000 – 90.000 ₺, 20–30 iş günü
+- Profesyonel e-ticaret sitesi: 100.000 – 150.000 ₺, 30–50 iş günü
+- Diyetisyen sitesi: 15.000 – 20.000 ₺, 7–10 iş günü
+- Psikolog sitesi: 15.000 – 20.000 ₺, 7–10 iş günü
+- Doktor sitesi: 20.000 – 30.000 ₺, 10–15 iş günü
+- Emlak sitesi: 20.000 – 40.000 ₺, 10 iş günü
+- Tur firması sitesi: 30.000 – 60.000 ₺, 10–15 iş günü
+- Vakıf ve dernek sitesi: 30.000 ₺, 15 iş günü
+- Otel sitesi: 30.000 – 100.000 ₺, 15–20 iş günü
+- Haber sitesi: 30.000 – 85.000 ₺, 25 iş günü
+- Online eğitim sitesi: 50.000 – 130.000 ₺, 25–30 iş günü
+- İlan sitesi: 60.000 – 180.000 ₺, 30–45 iş günü
+- Özel proje: Teklif ile, Projeye göre planlanır
 
-## Site türüne göre fiyat ve teslim süresi
-
-- Başlangıç seviye web sitesi, tek sayfa site, portfolyo: 10.000 TL, 3 iş günü
-- Kurumsal web sitesi: 10.000–20.000 TL, 7 iş günü
-- WordPress altyapılı site: 12.000–24.000 TL, 7 iş günü
-- Profesyonel kurumsal site: 15.000–40.000 TL, 10–15 iş günü
-- Başlangıç seviye e-ticaret: 30.000 TL, 10 iş günü
-- Orta seviye e-ticaret: 45.000–90.000 TL, 20–30 iş günü
-- Profesyonel e-ticaret: 100.000–150.000 TL, 30–50 iş günü
-- Diyetisyen ve psikolog sitesi: 15.000–20.000 TL, 7–10 iş günü
-- Doktor sitesi: 20.000–30.000 TL, 10–15 iş günü
-- Emlak sitesi: 20.000–40.000 TL, 10 iş günü
-- Otel sitesi: 30.000–100.000 TL, 15–20 iş günü
-- İlan sitesi: 60.000–180.000 TL, 30–45 iş günü
+## Sık sorulan sorular
+- Web sitesi tasarım fiyatları ne kadar? Standart paket 10.000 ₺, Gelişmiş paket 15.000 ₺, E-ticaret paketi 30.000 ₺'dir. Kurumsal siteler 10.000–40.000 ₺, e-ticaret siteleri 30.000–150.000 ₺ arasında fiyatlanır.
+- Siteyi kendim yönetebilir miyim? Evet. Her pakette gelen yönetim paneliyle yazı, fotoğraf, blog ve ürünleri teknik bilgi gerekmeden güncelleyebilirsiniz. Teslimde kısa bir kullanım eğitimi de veriyoruz.
+- Siteler mobil ve SEO uyumlu mu? Tüm sitelerimiz telefon, tablet ve bilgisayarda düzgün görünecek şekilde tasarlanır ve arama motorlarına uygun altyapıyla kodlanır.
+- Web sitesi ne kadar sürede hazır olur? Basit bir kurumsal site 3–7 iş gününde teslim edilir. E-ticaret ve kapsamlı projelerde süre 10–50 iş günü arasında değişir.
+- Web sitesi fiyatını neler belirler? Sayfa sayısı, dil seçeneği, e-ticaret modülleri, hız optimizasyonu ve özel yazılım ihtiyaçları fiyatı belirleyen başlıca kalemlerdir.
+- Domain, hosting ve SSL pakete dahil mi? Evet. Tüm paketlerde domain (alan adı), ultra hızlı hosting ve 256 bit SSL sertifikası ücretsiz olarak sunulur.
+- E-ticaret sitesi ne kadar? Başlangıç seviyesi e-ticaret paketimiz 30.000 ₺'dir. Daha kapsamlı mağazalar ihtiyaca göre 45.000 ₺ ile 150.000 ₺ arasında fiyatlanır.
+- Web sitesi yaptırmak için ne hazırlamam gerekir? Logonuz varsa logonuzu, işletmenizi anlatan kısa bir metni, hizmet veya ürün fotoğraflarınızı ve iletişim bilgilerinizi hazırlamanız yeterli. Logonuz yoksa tasarımını biz yapıyoruz.
 
 ## İletişim
-
 - Web: https://egsudijital.com/
 - Telefon: 0507 246 17 06, 0551 873 41 77
 - WhatsApp: 0507 246 17 06

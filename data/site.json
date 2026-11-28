@@ -1,0 +1,552 @@
+{
+  "seo": {
+    "title": "Web Sitesi Tasarımı ve Fiyatları 2026 | EGSU",
+    "description": "EGSU kurumsal web sitesi, e-ticaret, SEO ve Google Ads hizmetleri sunar. Domain, hosting ve SSL her pakette dahil, siteniz en erken 3 iş gününde yayında. Ücretsiz teklif alın.",
+    "shareTitle": "Web Sitesi Tasarım Fiyatları 2026 | EGSU",
+    "shareDescription": "Kurumsal web sitesi, e-ticaret, SEO ve Google Ads. Domain, hosting ve SSL her pakette dahil.",
+    "businessDescription": "EGSU, Alanya ve İstanbul'da müşterileriyle yüz yüze görüşerek çalışan bir web tasarım ajansıdır. Kurumsal web sitesi, e-ticaret sitesi, SEO ve Google Ads hizmetleri sunar. Domain, hosting ve SSL her pakette dahildir.",
+    "cities": [
+      "Alanya",
+      "İstanbul"
+    ],
+    "priceRange": "10.000 TL - 180.000 TL"
+  },
+  "contact": {
+    "phones": [
+      "0507 246 17 06",
+      "0551 873 41 77"
+    ],
+    "whatsapp": "0507 246 17 06",
+    "whatsappMessage": "Merhaba, web sitesi için bilgi almak istiyorum.",
+    "email": "info@egsudijital.com",
+    "location": "Alanya ve İstanbul'da yüz yüze görüşme",
+    "hours": "Hafta içi 09:00–18:00",
+    "opens": "09:00",
+    "closes": "18:00"
+  },
+  "hero": {
+    "pill": "Kurumsal web tasarım ajansı",
+    "title": "Prestijinize yakışan kurumsal web sitesi tasarımı",
+    "lead": "EGSU, markanızı internette en güçlü hâliyle temsil eden kurumsal ve e-ticaret siteleri tasarlar. Domain, hosting ve SSL her pakette dahil, siteniz en erken 3 iş gününde yayında.",
+    "button1": "Paketleri incele",
+    "button2": "Ücretsiz teklif al",
+    "chips": [
+      {
+        "icon": "check",
+        "text": "Ücretsiz domain"
+      },
+      {
+        "icon": "lock",
+        "text": "256 bit SSL"
+      },
+      {
+        "icon": "phone",
+        "text": "Mobil uyumlu"
+      },
+      {
+        "icon": "calendar",
+        "text": "Online randevu"
+      }
+    ],
+    "hint": "Adres çubuğuna firma adınızı yazın, sitenizi canlı görün."
+  },
+  "stats": [
+    {
+      "number": 3,
+      "unit": "gün",
+      "label": "En hızlı teslim süresi"
+    },
+    {
+      "number": 2,
+      "unit": "şehir",
+      "label": "Alanya ve İstanbul'da yüz yüze görüşme"
+    },
+    {
+      "number": 20,
+      "unit": "+",
+      "label": "Farklı site türü"
+    },
+    {
+      "number": 256,
+      "unit": "bit",
+      "label": "SSL güvenliği her pakette"
+    }
+  ],
+  "marquee": {
+    "row1": [
+      "Kurumsal web sitesi",
+      "E-ticaret",
+      "SEO",
+      "Google Ads",
+      "Mobil uyumlu tasarım"
+    ],
+    "row2": [
+      "Kurumsal kimlik",
+      "Logo tasarımı",
+      "Hosting ve SSL",
+      "Yönetim paneli"
+    ]
+  },
+  "services": {
+    "title": "Web tasarım, SEO ve Google Ads",
+    "text": "Sitenizi kuruyor, Google'da bulunmasını ve müşteri getirmesini sağlıyoruz. Hepsi tek çatı altında.",
+    "items": [
+      {
+        "icon": "monitor",
+        "title": "Web tasarım",
+        "text": "İşletmenize özel, mobil ve SEO uyumlu, panelden kendiniz güncelleyebileceğiniz kurumsal web siteleri.",
+        "linkText": "Paketleri gör",
+        "link": "#paketler"
+      },
+      {
+        "icon": "search",
+        "title": "SEO",
+        "text": "Teknik ve içerik çalışmasıyla Google aramalarında üst sıralara çıkmanızı sağlıyoruz.",
+        "linkText": "Teklif al",
+        "link": "#iletisim"
+      },
+      {
+        "icon": "chart",
+        "title": "Google Ads",
+        "text": "Doğru kitleye gösterilen, sürekli optimize edilen reklamlarla satışlarınızı artırıyoruz.",
+        "linkText": "Teklif al",
+        "link": "#iletisim"
+      },
+      {
+        "icon": "pin",
+        "title": "Yüz yüze görüşme",
+        "text": "Alanya ve İstanbul'da yüz yüze görüşüyor, sitenizi ihtiyacınızı birlikte planlayarak kuruyoruz.",
+        "linkText": "Teklif al",
+        "link": "#iletisim"
+      }
+    ]
+  },
+  "packages": {
+    "title": "Web tasarım paketleri",
+    "text": "Her pakette domain, ultra hızlı hosting, SSL ve logo tasarımı ücretsiz. Gizli maliyet yok.",
+    "items": [
+      {
+        "name": "Standart",
+        "badge": "%20 indirimli",
+        "highlight": false,
+        "desc": "Hızlıca yayına çıkmak isteyen küçük işletmeler için.",
+        "price": 10000,
+        "note": "Faturalı, tek seferlik ödeme",
+        "listTitle": "Pakete dahil olanlar",
+        "extras": false,
+        "features": [
+          "İşletmeye özel site tasarımı",
+          "Ücretsiz domain (alan adı)",
+          "Ücretsiz ultra hızlı hosting",
+          "SSL güvenlik sertifikası",
+          "Mobil uyumlu tasarım",
+          "SEO uyumlu altyapı",
+          "Gelişmiş yönetim paneli",
+          "Online randevu / rezervasyon",
+          "1 kurumsal e-posta adresi",
+          "Google Haritalar konumu",
+          "Hızlı WhatsApp butonu",
+          "Haber / blog sistemi",
+          "İletişim formu",
+          "Firmaya özel logo tasarımı",
+          "10 sayfaya kadar"
+        ],
+        "buttonText": "Standart paketi seç"
+      },
+      {
+        "name": "Gelişmiş",
+        "badge": "En çok tercih edilen",
+        "highlight": true,
+        "desc": "Büyüyen markalar ve kurumsal firmalar için tam donanım.",
+        "price": 15000,
+        "note": "Faturalı, tek seferlik ödeme",
+        "listTitle": "Standart paketteki her şey, ek olarak:",
+        "extras": true,
+        "features": [
+          "5 kurumsal e-posta adresi",
+          "20 sayfaya kadar",
+          "Açılış hızı optimizasyonu",
+          "Google Haritalar işletme kaydı",
+          "Google Analytics kurulumu",
+          "Google Search Console kaydı",
+          "2 dil seçeneği"
+        ],
+        "buttonText": "Gelişmiş paketi seç"
+      },
+      {
+        "name": "E-ticaret",
+        "badge": "Online satış",
+        "highlight": false,
+        "desc": "Ürünlerini internetten satmaya başlamak isteyenler için.",
+        "price": 30000,
+        "note": "Faturalı, tek seferlik ödeme",
+        "listTitle": "Standart paketteki her şey, ek olarak:",
+        "extras": true,
+        "features": [
+          "10 kurumsal e-posta adresi",
+          "30 sayfaya kadar",
+          "Açılış hızı optimizasyonu",
+          "Haritalar, Analytics ve Search Console",
+          "Canlı destek entegrasyonu",
+          "Ürün ve kategori modülü",
+          "Ürün seçenek / varyant sistemi",
+          "Sepet modülü",
+          "Kredi kartıyla ödeme",
+          "Havale / EFT ile ödeme",
+          "Kapıda ödeme",
+          "İndirim kuponu modülü",
+          "Üyelik sistemi"
+        ],
+        "buttonText": "E-ticaret paketini seç"
+      }
+    ],
+    "assurances": [
+      {
+        "icon": "shield",
+        "text": "Faturalı hizmet"
+      },
+      {
+        "icon": "clock",
+        "text": "Teslim tarihi baştan yazılı"
+      },
+      {
+        "icon": "chat",
+        "text": "Yayından sonra teknik destek"
+      }
+    ]
+  },
+  "prices": {
+    "title": "Site türüne göre web sitesi fiyatları",
+    "text": "Ortalama fiyat aralıkları ve teslim süreleri. Kesin fiyatı ihtiyaçlarınızı dinledikten sonra, çalışmaya başlamadan önce yazılı olarak paylaşıyoruz.",
+    "rows": [
+      {
+        "name": "Başlangıç seviye web sitesi",
+        "group": "Kurumsal ve kişisel",
+        "price": "10.000 ₺",
+        "daysMin": 3,
+        "daysMax": 3,
+        "daysNote": ""
+      },
+      {
+        "name": "Tek sayfa (OnePage) site",
+        "group": "Kurumsal ve kişisel",
+        "price": "10.000 ₺",
+        "daysMin": 3,
+        "daysMax": 3,
+        "daysNote": ""
+      },
+      {
+        "name": "Portfolyo ve kişisel marka sitesi",
+        "group": "Kurumsal ve kişisel",
+        "price": "10.000 ₺",
+        "daysMin": 3,
+        "daysMax": 3,
+        "daysNote": ""
+      },
+      {
+        "name": "Kurumsal web sitesi",
+        "group": "Kurumsal ve kişisel",
+        "price": "10.000 – 20.000 ₺",
+        "daysMin": 7,
+        "daysMax": 7,
+        "daysNote": ""
+      },
+      {
+        "name": "WordPress altyapılı site",
+        "group": "Kurumsal ve kişisel",
+        "price": "12.000 – 24.000 ₺",
+        "daysMin": 7,
+        "daysMax": 7,
+        "daysNote": ""
+      },
+      {
+        "name": "Blog sitesi",
+        "group": "Kurumsal ve kişisel",
+        "price": "20.000 ₺",
+        "daysMin": 7,
+        "daysMax": 7,
+        "daysNote": ""
+      },
+      {
+        "name": "Profesyonel kurumsal site",
+        "group": "Kurumsal ve kişisel",
+        "price": "15.000 – 40.000 ₺",
+        "daysMin": 10,
+        "daysMax": 15,
+        "daysNote": ""
+      },
+      {
+        "name": "Başlangıç seviye e-ticaret sitesi",
+        "group": "E-ticaret",
+        "price": "30.000 ₺",
+        "daysMin": 10,
+        "daysMax": 10,
+        "daysNote": ""
+      },
+      {
+        "name": "Orta seviye e-ticaret sitesi",
+        "group": "E-ticaret",
+        "price": "45.000 – 90.000 ₺",
+        "daysMin": 20,
+        "daysMax": 30,
+        "daysNote": ""
+      },
+      {
+        "name": "Profesyonel e-ticaret sitesi",
+        "group": "E-ticaret",
+        "price": "100.000 – 150.000 ₺",
+        "daysMin": 30,
+        "daysMax": 50,
+        "daysNote": ""
+      },
+      {
+        "name": "Diyetisyen sitesi",
+        "group": "Sektöre özel",
+        "price": "15.000 – 20.000 ₺",
+        "daysMin": 7,
+        "daysMax": 10,
+        "daysNote": ""
+      },
+      {
+        "name": "Psikolog sitesi",
+        "group": "Sektöre özel",
+        "price": "15.000 – 20.000 ₺",
+        "daysMin": 7,
+        "daysMax": 10,
+        "daysNote": ""
+      },
+      {
+        "name": "Doktor sitesi",
+        "group": "Sektöre özel",
+        "price": "20.000 – 30.000 ₺",
+        "daysMin": 10,
+        "daysMax": 15,
+        "daysNote": ""
+      },
+      {
+        "name": "Emlak sitesi",
+        "group": "Sektöre özel",
+        "price": "20.000 – 40.000 ₺",
+        "daysMin": 10,
+        "daysMax": 10,
+        "daysNote": ""
+      },
+      {
+        "name": "Tur firması sitesi",
+        "group": "Sektöre özel",
+        "price": "30.000 – 60.000 ₺",
+        "daysMin": 10,
+        "daysMax": 15,
+        "daysNote": ""
+      },
+      {
+        "name": "Vakıf ve dernek sitesi",
+        "group": "Sektöre özel",
+        "price": "30.000 ₺",
+        "daysMin": 15,
+        "daysMax": 15,
+        "daysNote": ""
+      },
+      {
+        "name": "Otel sitesi",
+        "group": "Sektöre özel",
+        "price": "30.000 – 100.000 ₺",
+        "daysMin": 15,
+        "daysMax": 20,
+        "daysNote": ""
+      },
+      {
+        "name": "Haber sitesi",
+        "group": "Sektöre özel",
+        "price": "30.000 – 85.000 ₺",
+        "daysMin": 25,
+        "daysMax": 25,
+        "daysNote": ""
+      },
+      {
+        "name": "Online eğitim sitesi",
+        "group": "Sektöre özel",
+        "price": "50.000 – 130.000 ₺",
+        "daysMin": 25,
+        "daysMax": 30,
+        "daysNote": ""
+      },
+      {
+        "name": "İlan sitesi",
+        "group": "Sektöre özel",
+        "price": "60.000 – 180.000 ₺",
+        "daysMin": 30,
+        "daysMax": 45,
+        "daysNote": ""
+      },
+      {
+        "name": "Özel proje",
+        "group": "Hepsi",
+        "price": "Teklif ile",
+        "daysMin": 0,
+        "daysMax": 0,
+        "daysNote": "Projeye göre planlanır"
+      }
+    ]
+  },
+  "why": {
+    "title": "Web sitesi neden önemli, iyisi neye benzer?",
+    "leftTitle": "Size kazandırdıkları",
+    "left": [
+      {
+        "icon": "shield",
+        "title": "Güven",
+        "text": "Müşteriler bir firmayı tanımadan önce internette arar. Profesyonel bir site ilk izlenimi sizin lehinize çevirir."
+      },
+      {
+        "icon": "clock",
+        "title": "Gece gündüz açık bir vitrin",
+        "text": "Mesai bittiğinde de sizi tanıtır, randevu ve talep toplar."
+      },
+      {
+        "icon": "users",
+        "title": "Yeni müşteriler",
+        "text": "Google'da sizi arayan ama henüz tanımayan kişilere ulaşırsınız."
+      },
+      {
+        "icon": "trophy",
+        "title": "Rakiplerden ayrışma",
+        "text": "Aynı hizmeti verenler arasında öne çıkmanın en hızlı yolu."
+      },
+      {
+        "icon": "chat",
+        "title": "Sürekli iletişim",
+        "text": "Blog, form ve WhatsApp ile müşterilerinizle bağı koparmazsınız."
+      }
+    ],
+    "rightTitle": "Seçerken bakmanız gerekenler",
+    "right": [
+      {
+        "icon": "bolt",
+        "title": "Hız",
+        "text": "Sayfalar 3 saniyenin altında açılmalı. Yavaş site ziyaretçi kaybettirir."
+      },
+      {
+        "icon": "layout",
+        "title": "Yönetim paneli",
+        "text": "Yazı, fotoğraf ve ürünleri kimseye sormadan değiştirebilmelisiniz."
+      },
+      {
+        "icon": "phone",
+        "title": "Mobil uyum",
+        "text": "Ziyaretçilerin çoğu telefondan gelir. Her ekranda kusursuz görünmeli."
+      },
+      {
+        "icon": "lock",
+        "title": "SSL güvenliği",
+        "text": "256 bit SSL ziyaretçi bilgilerini korur, Google da güvenli siteleri öne alır."
+      },
+      {
+        "icon": "support",
+        "title": "Teknik destek",
+        "text": "Yayından sonra ulaşabileceğiniz bir ekip olmalı."
+      }
+    ]
+  },
+  "process": {
+    "title": "Web sitesi yaptırma süreci",
+    "text": "İlk görüşmeden yayına dört adım. Fiyat ve teslim tarihi, çalışmaya başlamadan önce yazılı olarak elinizde olur.",
+    "steps": [
+      {
+        "title": "Tanışma",
+        "text": "Hedeflerinizi, sektörünüzü ve sitede olmasını istediklerinizi konuşuyoruz."
+      },
+      {
+        "title": "Teklif",
+        "text": "Net fiyatı ve teslim tarihini sizinle paylaşıyoruz, onayınızla başlıyoruz."
+      },
+      {
+        "title": "Tasarım",
+        "text": "Markanıza özel tasarımı ve içerik planını hazırlayıp sitenizi kuruyoruz."
+      },
+      {
+        "title": "Yayın",
+        "text": "Testlerden sonra sitenizi açıyor, yönetim panelini nasıl kullanacağınızı gösteriyoruz."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Web tasarım hakkında sık sorulan sorular",
+    "items": [
+      {
+        "q": "Web sitesi tasarım fiyatları ne kadar?",
+        "a": "Standart paket 10.000 ₺, Gelişmiş paket 15.000 ₺, E-ticaret paketi 30.000 ₺'dir. Kurumsal siteler 10.000–40.000 ₺, e-ticaret siteleri 30.000–150.000 ₺ arasında fiyatlanır."
+      },
+      {
+        "q": "Siteyi kendim yönetebilir miyim?",
+        "a": "Evet. Her pakette gelen yönetim paneliyle yazı, fotoğraf, blog ve ürünleri teknik bilgi gerekmeden güncelleyebilirsiniz. Teslimde kısa bir kullanım eğitimi de veriyoruz."
+      },
+      {
+        "q": "Siteler mobil ve SEO uyumlu mu?",
+        "a": "Tüm sitelerimiz telefon, tablet ve bilgisayarda düzgün görünecek şekilde tasarlanır ve arama motorlarına uygun altyapıyla kodlanır."
+      },
+      {
+        "q": "Web sitesi ne kadar sürede hazır olur?",
+        "a": "Basit bir kurumsal site 3–7 iş gününde teslim edilir. E-ticaret ve kapsamlı projelerde süre 10–50 iş günü arasında değişir."
+      },
+      {
+        "q": "Web sitesi fiyatını neler belirler?",
+        "a": "Sayfa sayısı, dil seçeneği, e-ticaret modülleri, hız optimizasyonu ve özel yazılım ihtiyaçları fiyatı belirleyen başlıca kalemlerdir."
+      },
+      {
+        "q": "Domain, hosting ve SSL pakete dahil mi?",
+        "a": "Evet. Tüm paketlerde domain (alan adı), ultra hızlı hosting ve 256 bit SSL sertifikası ücretsiz olarak sunulur."
+      },
+      {
+        "q": "E-ticaret sitesi ne kadar?",
+        "a": "Başlangıç seviyesi e-ticaret paketimiz 30.000 ₺'dir. Daha kapsamlı mağazalar ihtiyaca göre 45.000 ₺ ile 150.000 ₺ arasında fiyatlanır."
+      },
+      {
+        "q": "Web sitesi yaptırmak için ne hazırlamam gerekir?",
+        "a": "Logonuz varsa logonuzu, işletmenizi anlatan kısa bir metni, hizmet veya ürün fotoğraflarınızı ve iletişim bilgilerinizi hazırlamanız yeterli. Logonuz yoksa tasarımını biz yapıyoruz."
+      }
+    ]
+  },
+  "about": {
+    "title": "EGSU hakkında kısa bilgi",
+    "intro": "EGSU, Alanya ve İstanbul'da müşterileriyle yüz yüze görüşerek çalışan bir web tasarım ajansıdır. Kurumsal web sitesi, e-ticaret sitesi, SEO ve Google Ads hizmetleri sunar. Siteler türüne göre 3 ile 50 iş günü arasında teslim edilir.",
+    "facts": [
+      {
+        "label": "Hizmetler",
+        "value": "Web tasarım, e-ticaret, SEO, Google Ads"
+      },
+      {
+        "label": "Konum",
+        "value": "Alanya ve İstanbul'da yüz yüze görüşme"
+      },
+      {
+        "label": "Teslim",
+        "value": "Site türüne göre 3 ile 50 iş günü"
+      },
+      {
+        "label": "Pakete dahil",
+        "value": "Domain, hosting, SSL, logo, yönetim paneli"
+      }
+    ]
+  },
+  "contactSection": {
+    "bigText": "Projenizi konuşalım",
+    "title": "Web siteniz için teklif alın",
+    "text": "Formu doldurun, bilgileriniz WhatsApp mesajı olarak hazırlansın, size özel teklifle en kısa sürede dönelim. İsterseniz doğrudan arayın.",
+    "button": "WhatsApp ile teklif iste"
+  },
+  "references": {
+    "navLabel": "Referanslar",
+    "title": "Referanslarımız",
+    "intro": "Tasarlayıp yayına aldığımız sitelerden bazıları. Her biri işletmesine özel tasarlandı, mobil uyumlu ve Google'a hazır teslim edildi.",
+    "seoTitle": "Referanslar | EGSU Web Tasarım",
+    "seoDescription": "EGSU'nun tasarlayıp yayına aldığı kurumsal web siteleri ve e-ticaret projeleri. Referans çalışmalarımızı inceleyin.",
+    "emptyText": "Referans çalışmalarımız çok yakında burada. Sitenizi birlikte planlamak için bize yazın.",
+    "ctaTitle": "Sıradaki referans sizin siteniz olsun",
+    "ctaText": "İhtiyacınızı dinleyelim, fiyatı ve teslim tarihini yazılı olarak paylaşalım.",
+    "items": []
+  },
+  "footer": {
+    "copyright": "© 2026 EGSU. Tüm hakları saklıdır."
+  }
+}
