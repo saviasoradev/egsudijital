@@ -545,7 +545,40 @@
     "emptyText": "Referans çalışmalarımız çok yakında burada. Sitenizi birlikte planlamak için bize yazın.",
     "ctaTitle": "Sıradaki referans sizin siteniz olsun",
     "ctaText": "İhtiyacınızı dinleyelim, fiyatı ve teslim tarihini yazılı olarak paylaşalım.",
-    "items": []
+    "items": [
+      {
+        "name": "Şen Parke",
+        "sector": "Parke ve mutfak dolabı",
+        "year": "2026",
+        "url": "https://senparke.com.tr",
+        "image": "",
+        "imageWidth": 0,
+        "imageHeight": 0,
+        "desc": "1978'den beri Avcılar'da hizmet veren parke firması için kurumsal site. Yüzlerce laminat parke ve MDF ürünü marka, koleksiyon, renk tonu ve kalınlığa göre filtrelenebiliyor, ücretsiz keşif randevusu siteden isteniyor.",
+        "tags": [
+          "Kurumsal site",
+          "Filtreli ürün kataloğu",
+          "Keşif randevu formu",
+          "SEO"
+        ]
+      },
+      {
+        "name": "Prime Barbers",
+        "sector": "Berber",
+        "year": "2026",
+        "url": "https://primebarbers.com.tr",
+        "image": "",
+        "imageWidth": 0,
+        "imageHeight": 0,
+        "desc": "Cerrahpaşa'daki erkek kuaförü için tanıtım sitesi. Hizmetler, tek fiyatlı paket, galeri ve doğrudan WhatsApp'a düşen online randevu formu.",
+        "tags": [
+          "Kurumsal site",
+          "Online randevu",
+          "WhatsApp entegrasyonu",
+          "Galeri"
+        ]
+      }
+    ]
   },
   "footer": {
     "copyright": "© 2026 EGSU. Tüm hakları saklıdır."

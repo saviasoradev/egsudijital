@@ -40,6 +40,10 @@
 - E-ticaret sitesi ne kadar? Başlangıç seviyesi e-ticaret paketimiz 30.000 ₺'dir. Daha kapsamlı mağazalar ihtiyaca göre 45.000 ₺ ile 150.000 ₺ arasında fiyatlanır.
 - Web sitesi yaptırmak için ne hazırlamam gerekir? Logonuz varsa logonuzu, işletmenizi anlatan kısa bir metni, hizmet veya ürün fotoğraflarınızı ve iletişim bilgilerinizi hazırlamanız yeterli. Logonuz yoksa tasarımını biz yapıyoruz.
 
+## Referanslar
+- Şen Parke (Parke ve mutfak dolabı, 2026): https://senparke.com.tr. 1978'den beri Avcılar'da hizmet veren parke firması için kurumsal site. Yüzlerce laminat parke ve MDF ürünü marka, koleksiyon, renk tonu ve kalınlığa göre filtrelenebiliyor, ücretsiz keşif randevusu siteden isteniyor.
+- Prime Barbers (Berber, 2026): https://primebarbers.com.tr. Cerrahpaşa'daki erkek kuaförü için tanıtım sitesi. Hizmetler, tek fiyatlı paket, galeri ve doğrudan WhatsApp'a düşen online randevu formu.
+
 ## İletişim
 - Web: https://egsudijital.com/
 - Referanslar: https://egsudijital.com/referanslar/

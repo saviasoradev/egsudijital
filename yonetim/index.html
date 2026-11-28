@@ -319,7 +319,7 @@ function loadAll(){
     }
     var known={};orig.references.items.forEach(function(it){if(it.image)known[it.image]=1});
     data.references.items.forEach(function(it){if(it.image&&!known[it.image]){it.image='';it.imageWidth=0;it.imageHeight=0}});
-    buildNav();show(location.hash.slice(1)||'references');changed();
+    buildNav();show(location.hash.slice(1)||'references');changed();autoShots();
   });
 }
 
@@ -440,20 +440,10 @@ function field(f,obj){
     paint();
     var busy=false,shotBtn=el('button',{type:'button',class:'btn btn-ghost btn-sm',text:'Site adresinden çek'});
     var shot=function(){
-      if(busy)return;var u=normUrl(obj.url||'');
-      if(!/^https?:\/\/[^\s.]+\.[^\s]+$/.test(u)){info.textContent='Önce yukarıya sitenin adresini yazın.';return}
+      if(busy)return;
       busy=true;shotBtn.disabled=true;info.textContent='Ekran görüntüsü alınıyor, 10–30 saniye sürebilir…';th.textContent='Alınıyor…';
-      var api='https://api.microlink.io/?url='+encodeURIComponent(u)+'&screenshot=true&meta=false&fullPage=true&viewport.width=1440&viewport.height=900&viewport.deviceScaleFactor=1&waitForTimeout=2500&type=jpeg';
-      fetch(api).then(function(r){return r.json()}).then(function(j){
-        if(j.status!=='success'||!j.data||!j.data.screenshot)throw new Error(j.code==='ERATE'||/rate/i.test(j.message||'')?'Günlük ücretsiz çekim hakkı doldu, yarın tekrar deneyin ya da görseli kendiniz yükleyin.':(j.message||'site açılamadı'));
-        return fetch(j.data.screenshot.url).then(function(r){return r.blob()});
-      }).then(toWebp).then(function(r){
-        var old=obj[f.k];if(old&&pending[old])delete pending[old];
-        var p='img/ref/'+R.slug(obj.name||'referans')+'-'+Date.now().toString(36)+'.webp';
-        pending[p]=r;obj[f.k]=p;obj.imageWidth=r.w;obj.imageHeight=r.h;
-        info.textContent='Ekran görüntüsü alındı ('+r.w+'×'+r.h+', '+Math.round(r.size/1024)+' KB). Yayınla dediğinizde yüklenecek.';
-        paint();changed();
-      }).catch(function(e){info.textContent='Ekran görüntüsü alınamadı: '+e.message;paint()}).then(function(){busy=false;shotBtn.disabled=false});
+      shotFor(obj).then(function(r){info.textContent='Ekran görüntüsü alındı ('+r.w+'×'+r.h+', '+Math.round(r.size/1024)+' KB). Yayınla dediğinizde yüklenecek.';paint()})
+      .catch(function(e){info.textContent='Ekran görüntüsü alınamadı: '+e.message;paint()}).then(function(){busy=false;shotBtn.disabled=false});
     };
     shotBtn.onclick=shot;
     Object.defineProperty(obj,'__shot',{value:shot,enumerable:false,configurable:true,writable:true});
@@ -472,6 +462,29 @@ function field(f,obj){
     box.appendChild(info);var h4=hint();if(h4)box.appendChild(h4);
   }
   return box;
+}
+function shotFor(obj){
+  var u=normUrl(obj.url||'');
+  if(!/^https?:\/\/[^\s.]+\.[^\s]+$/.test(u))return Promise.reject(new Error('önce sitenin adresini yazın'));
+  var api='https://api.microlink.io/?url='+encodeURIComponent(u)+'&screenshot=true&meta=false&fullPage=true&viewport.width=1440&viewport.height=900&viewport.deviceScaleFactor=1&waitForTimeout=2500&type=jpeg';
+  return fetch(api).then(function(r){return r.json()}).then(function(j){
+    if(j.status!=='success'||!j.data||!j.data.screenshot)throw new Error(j.code==='ERATE'||/rate/i.test(j.message||'')?'Günlük ücretsiz çekim hakkı doldu, yarın tekrar deneyin ya da görseli kendiniz yükleyin.':(j.message||'site açılamadı'));
+    return fetch(j.data.screenshot.url).then(function(r){return r.blob()});
+  }).then(toWebp).then(function(r){
+    var old=obj.image;if(old&&pending[old])delete pending[old];
+    var p='img/ref/'+R.slug(obj.name||'referans')+'-'+Date.now().toString(36)+'.webp';
+    pending[p]=r;obj.image=p;obj.imageWidth=r.w;obj.imageHeight=r.h;changed();return r;
+  });
+}
+function autoShots(){
+  var todo=data.references.items.filter(function(it){return it.url&&!it.image});
+  if(!todo.length)return;
+  toast(todo.length+' referansın ekran görüntüsü alınıyor…');
+  todo.reduce(function(pr,it){return pr.then(function(){return shotFor(it).catch(function(){})})},Promise.resolve()).then(function(){
+    var ok=todo.filter(function(it){return it.image}).length;
+    if(cur&&cur.id==='references')show('references');
+    toast(ok?ok+' ekran görüntüsü hazır. Siteye koymak için Yayınla\'ya basın.':'Ekran görüntüleri alınamadı, referansın içinden tekrar deneyin.');
+  });
 }
 function normUrl(v){v=String(v||'').trim();if(v&&!/^https?:\/\//i.test(v))v='https://'+v;return v}
 function withTitle(f,cb){if(f.row)return {row:f.row.map(function(x){return x.k?withTitle(x,cb):x})};var c={};for(var k in f)c[k]=f[k];c.onTitle=cb;return c}
